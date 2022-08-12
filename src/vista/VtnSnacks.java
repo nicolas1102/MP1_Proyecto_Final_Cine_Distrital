@@ -23,7 +23,7 @@ public class VtnSnacks extends javax.swing.JFrame {
 
     private VtnSnacks vtnSnacks;
     private MdlSnacks mdlSnacks;
-    private CtrSnacks control;
+    private CtrSnacks ctrSnacks;
 
     public VtnSnacks(MdlSnacks modelo) {
         this.mdlSnacks = modelo;
@@ -32,11 +32,11 @@ public class VtnSnacks extends javax.swing.JFrame {
         capturarEventos();
     }
 
-    public CtrSnacks getControl() {
-        if (control == null) {
-            control = new CtrSnacks(this);
+    public CtrSnacks getCtrSnacks() {
+        if (ctrSnacks == null) {
+            ctrSnacks = new CtrSnacks(this);
         }
-        return control;
+        return ctrSnacks;
     }
 
     public JButton getConfirmar() {
@@ -344,7 +344,7 @@ public class VtnSnacks extends javax.swing.JFrame {
     }
 
     private void capturarEventos() {
-        jButton1.addActionListener(getControl());
+        jButton1.addActionListener(getCtrSnacks());
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel TiendaSnacks;

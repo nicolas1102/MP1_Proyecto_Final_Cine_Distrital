@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 import javax.swing.SpinnerNumberModel;
 import control.dao.MultiplexesDAO;
 import control.dao.SnacksDAO;
-import vista.VtnSnacks;
+import vista.VtnSeleccionSnacks;
 
 /**
  *
@@ -19,9 +19,9 @@ import vista.VtnSnacks;
  * @author Daniel Paez
  * @author Nicolas Di­az
  */
-public class MdlSnacks {
+public class MdlSeleccionSnacks {
 
-    private VtnSnacks vtnSnacks;
+    private VtnSeleccionSnacks vtnSnacks;
     private SnacksDAO snacksDAO;
     private String multiplex;
     private int id = 0;
@@ -31,14 +31,14 @@ public class MdlSnacks {
      *
      * @return
      */
-    public VtnSnacks getVentana() {
+    public VtnSeleccionSnacks getVentana() {
         if (vtnSnacks == null) {
-            vtnSnacks = new VtnSnacks(this);
+            vtnSnacks = new VtnSeleccionSnacks(this);
         }
         return vtnSnacks;
     }
 
-    public MdlSnacks() {
+    public MdlSeleccionSnacks() {
 
     }
 

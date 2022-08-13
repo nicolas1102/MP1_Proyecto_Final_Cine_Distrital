@@ -22,7 +22,7 @@ import control.dao.HorasDAO;
 import control.dao.PeliculasDAO;
 import control.dao.CalificacionesDAO;
 import control.dao.SillasDAO;
-import vista.VtnFuncion;
+import vista.VtnSeleccionFuncion;
 
 /**
  *
@@ -30,9 +30,9 @@ import vista.VtnFuncion;
  * @author Daniel Paez
  * @author Nicolas Di­az
  */
-public class MdlFuncion {
+public class MdlSeleccionFuncion {
 
-    private VtnFuncion vtnFuncion;
+    private VtnSeleccionFuncion vtnFuncion;
     String multiplex;
     int general;
     int preferencial;
@@ -42,9 +42,9 @@ public class MdlFuncion {
      * @param multiplex
      * @return 
      */
-    public VtnFuncion getVentana(String multiplex) {
+    public VtnSeleccionFuncion getVentana(String multiplex) {
         if (vtnFuncion == null) {
-            vtnFuncion = new VtnFuncion(this, multiplex);
+            vtnFuncion = new VtnSeleccionFuncion(this, multiplex);
         }
         return vtnFuncion;
     }

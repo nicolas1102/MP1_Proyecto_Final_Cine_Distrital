@@ -5,9 +5,9 @@
  */
 package vista;
 
-import modelo.MdlAsiento;
+import modelo.MdlSeleccionSillas;
 import modelo.MdlReciboBoletas;
-import control.logica.CtrAsientos;
+import control.logica.CtrSeleccionSillas;
 import java.util.ArrayList;
 import javax.swing.JButton;
 
@@ -17,18 +17,18 @@ import javax.swing.JButton;
  * @author Daniel Paez
  * @author Nicolas Di­az
  */
-public class VtnSeleccionAsientos extends javax.swing.JFrame {
+public class VtnSeleccionSillas extends javax.swing.JFrame {
 
-    private VtnSeleccionAsientos vtnSeleccionAsientos;
-    private final MdlAsiento mdlAsiento;
-    private CtrAsientos ctrAsientos;
+    private VtnSeleccionSillas vtnSeleccionAsientos;
+    private final MdlSeleccionSillas mdlAsiento;
+    private CtrSeleccionSillas ctrAsientos;
 
     /**
      * 
      * @param modelo
      * @param tipoSilla 
      */
-    public VtnSeleccionAsientos(MdlAsiento modelo, String tipoSilla) {
+    public VtnSeleccionSillas(MdlSeleccionSillas modelo, String tipoSilla) {
         this.mdlAsiento = modelo;
         initComponents();
         setLocationRelativeTo(null);
@@ -168,9 +168,9 @@ public class VtnSeleccionAsientos extends javax.swing.JFrame {
         btnConfirmar.addActionListener(getCtrAsientos());
     }
 
-    public CtrAsientos getCtrAsientos() {
+    public CtrSeleccionSillas getCtrAsientos() {
         if (ctrAsientos == null) {
-            ctrAsientos = new CtrAsientos(this);
+            ctrAsientos = new CtrSeleccionSillas(this);
         }
         return ctrAsientos;
     }
@@ -323,7 +323,7 @@ public class VtnSeleccionAsientos extends javax.swing.JFrame {
         }
     }
 
-    public MdlAsiento getMdlAsiento() {
+    public MdlSeleccionSillas getMdlAsiento() {
         return mdlAsiento;
     }
 

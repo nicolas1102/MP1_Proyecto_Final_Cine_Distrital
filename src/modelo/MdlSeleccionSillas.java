@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import control.dao.SillasDAO;
 import control.dao.TicketsDAO;
-import vista.VtnSeleccionAsientos;
+import vista.VtnSeleccionSillas;
 
 /**
  *
@@ -20,9 +20,9 @@ import vista.VtnSeleccionAsientos;
  * @author Daniel Paez
  * @author Nicolas Di­az
  */
-public class MdlAsiento {
+public class MdlSeleccionSillas {
 
-    private VtnSeleccionAsientos vtnSeleccionAsientos;
+    private VtnSeleccionSillas vtnSeleccionAsientos;
     String tipo;
     int funcion;
     int cantidad;
@@ -33,9 +33,9 @@ public class MdlAsiento {
      *
      * @return
      */
-    public VtnSeleccionAsientos getVentana() {
+    public VtnSeleccionSillas getVentana() {
         if (vtnSeleccionAsientos == null) {
-            vtnSeleccionAsientos = new VtnSeleccionAsientos(this, tipo);
+            vtnSeleccionAsientos = new VtnSeleccionSillas(this, tipo);
         }
         return vtnSeleccionAsientos;
     }

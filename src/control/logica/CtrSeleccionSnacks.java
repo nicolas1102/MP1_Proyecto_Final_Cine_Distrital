@@ -7,8 +7,8 @@ package control.logica;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import modelo.MdlSnacks;
-import vista.VtnSnacks;
+import modelo.MdlSeleccionSnacks;
+import vista.VtnSeleccionSnacks;
 
 /**
  *
@@ -16,16 +16,16 @@ import vista.VtnSnacks;
  * @author Daniel Paez
  * @author Nicolas Di­az
  */
-public class CtrSnacks implements ActionListener {
+public class CtrSeleccionSnacks implements ActionListener {
 
-    private final MdlSnacks mdlSnacks;
+    private final MdlSeleccionSnacks mdlSnacks;
     private int usuario;
 
     /**
      * 
      * @param aThis 
      */
-    public CtrSnacks(VtnSnacks aThis) {
+    public CtrSeleccionSnacks(VtnSeleccionSnacks aThis) {
         mdlSnacks = aThis.getMdlSnacks();
     }
 

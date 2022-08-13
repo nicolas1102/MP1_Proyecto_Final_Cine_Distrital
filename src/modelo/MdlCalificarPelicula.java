@@ -11,7 +11,7 @@ import control.dao.PeliculasDAO;
 import control.dao.CalificacionesDAO;
 import control.dao.ClientesDAO;
 import control.dao.TicketsDAO;
-import vista.VtnCalificar;
+import vista.VtnCalificarPelicula;
 
 /**
  * 
@@ -19,17 +19,17 @@ import vista.VtnCalificar;
  * @author Daniel Paez
  * @author Nicolas Di­az
  */
-public class MdlCalificar {
+public class MdlCalificarPelicula {
 
-    private VtnCalificar vtnCalificar;
+    private VtnCalificarPelicula vtnCalificar;
 
     /**
      * 
      * @return 
      */
-    public VtnCalificar getVentana() {
+    public VtnCalificarPelicula getVentana() {
         if (vtnCalificar == null) {
-            vtnCalificar = new VtnCalificar(this);
+            vtnCalificar = new VtnCalificarPelicula(this);
         }
         return vtnCalificar;
     }

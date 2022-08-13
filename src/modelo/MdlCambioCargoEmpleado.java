@@ -10,8 +10,8 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import control.dao.EmpleadosDAO;
 import control.dao.MultiplexesDAO;
-import vista.VtnCambiarEmpleado;
-import vista.VtnCambiarEmpleado;
+import vista.VtnCambioCargoEmpleado;
+import vista.VtnCambioCargoEmpleado;
 
 /**
  * 
@@ -19,17 +19,17 @@ import vista.VtnCambiarEmpleado;
  * @author Daniel Paez
  * @author Nicolas Di­az
  */
-public class MdlCambiarCargo {
+public class MdlCambioCargoEmpleado {
     
     private int Codigo = 0;
-    private VtnCambiarEmpleado Vista ;
+    private VtnCambioCargoEmpleado Vista ;
     
     public void Iniciar(){
         getVentana().setVisible(true);
     }
-    public VtnCambiarEmpleado getVentana() {
+    public VtnCambioCargoEmpleado getVentana() {
         if (Vista == null) {
-            Vista = new VtnCambiarEmpleado(this);
+            Vista = new VtnCambioCargoEmpleado(this);
         }
         return Vista;
     }

@@ -7,8 +7,8 @@ package control.logica;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import vista.VtnCalificar;
-import modelo.MdlCalificar;
+import vista.VtnCalificarPelicula;
+import modelo.MdlCalificarPelicula;
 
 /**
  *
@@ -16,15 +16,15 @@ import modelo.MdlCalificar;
  * @author Daniel Paez
  * @author Nicolas Di­az
  */
-public class CtrCalificar implements ActionListener {
+public class CtrCalificarPelicula implements ActionListener {
 
-    private MdlCalificar mdlCalificar;
+    private MdlCalificarPelicula mdlCalificar;
 
     /**
      *
      * @param aThis
      */
-    public CtrCalificar(VtnCalificar aThis) {
+    public CtrCalificarPelicula(VtnCalificarPelicula aThis) {
         mdlCalificar = aThis.getMdlCalificar();
     }
 

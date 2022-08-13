@@ -6,12 +6,12 @@
 package vista;
 
 import modelo.MdlReciboSnacks;
-import modelo.MdlSnacks;
-import control.logica.CtrSnacks;
+import modelo.MdlSeleccionSnacks;
+import control.logica.CtrSeleccionSnacks;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JSpinner;
-import vista.VtnSnacks;
+import vista.VtnSeleccionSnacks;
 
 /**
  *
@@ -19,22 +19,22 @@ import vista.VtnSnacks;
  * @author Daniel Paez
  * @author Nicolas DiÂ­az
  */
-public class VtnSnacks extends javax.swing.JFrame {
+public class VtnSeleccionSnacks extends javax.swing.JFrame {
 
-    private VtnSnacks vtnSnacks;
-    private MdlSnacks mdlSnacks;
-    private CtrSnacks ctrSnacks;
+    private VtnSeleccionSnacks vtnSnacks;
+    private MdlSeleccionSnacks mdlSnacks;
+    private CtrSeleccionSnacks ctrSnacks;
 
-    public VtnSnacks(MdlSnacks modelo) {
+    public VtnSeleccionSnacks(MdlSeleccionSnacks modelo) {
         this.mdlSnacks = modelo;
         initComponents();
         setLocationRelativeTo(null);
         capturarEventos();
     }
 
-    public CtrSnacks getCtrSnacks() {
+    public CtrSeleccionSnacks getCtrSnacks() {
         if (ctrSnacks == null) {
-            ctrSnacks = new CtrSnacks(this);
+            ctrSnacks = new CtrSeleccionSnacks(this);
         }
         return ctrSnacks;
     }
@@ -43,7 +43,7 @@ public class VtnSnacks extends javax.swing.JFrame {
         return jButton1;
     }
 
-    public MdlSnacks getMdlSnacks() {
+    public MdlSeleccionSnacks getMdlSnacks() {
         return mdlSnacks;
     }
     //Labels
@@ -301,14 +301,46 @@ public class VtnSnacks extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VtnSnacks.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VtnSeleccionSnacks.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VtnSnacks.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VtnSeleccionSnacks.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VtnSnacks.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VtnSeleccionSnacks.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VtnSnacks.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VtnSeleccionSnacks.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>

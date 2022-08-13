@@ -5,9 +5,9 @@
  */
 package vista;
 
-import modelo.MdlFuncion;
-import modelo.MdlAsiento;
-import control.logica.CtrFuncion;
+import modelo.MdlSeleccionFuncion;
+import modelo.MdlSeleccionSillas;
+import control.logica.CtrSeleccionFuncion;
 import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -23,11 +23,11 @@ import javax.swing.SpinnerNumberModel;
  * @author Daniel Paez
  * @author Nicolas Di­az
  */
-public class VtnFuncion extends javax.swing.JFrame {
+public class VtnSeleccionFuncion extends javax.swing.JFrame {
 
-    private VtnFuncion vtnFuncion;
-    private final MdlFuncion mdlFuncion;
-    private CtrFuncion ctrFuncion;
+    private VtnSeleccionFuncion vtnFuncion;
+    private final MdlSeleccionFuncion mdlFuncion;
+    private CtrSeleccionFuncion ctrFuncion;
     String multiplex;
 
     /**
@@ -35,7 +35,7 @@ public class VtnFuncion extends javax.swing.JFrame {
      * @param mdlFuncion
      * @param multiplex
      */
-    public VtnFuncion(MdlFuncion mdlFuncion, String multiplex) {
+    public VtnSeleccionFuncion(MdlSeleccionFuncion mdlFuncion, String multiplex) {
         this.multiplex = multiplex;
         this.mdlFuncion = mdlFuncion;
         initComponents();
@@ -52,9 +52,9 @@ public class VtnFuncion extends javax.swing.JFrame {
      *
      * @return
      */
-    public CtrFuncion getCtrFuncion() {
+    public CtrSeleccionFuncion getCtrFuncion() {
         if (ctrFuncion == null) {
-            ctrFuncion = new CtrFuncion(this, multiplex);
+            ctrFuncion = new CtrSeleccionFuncion(this, multiplex);
         }
         return ctrFuncion;
     }
@@ -79,8 +79,8 @@ public class VtnFuncion extends javax.swing.JFrame {
      */
     public void mostrarVtnSillas(int funcion, String tipoSilla) {
         this.setVisible(false);
-        MdlAsiento mdlAsiento;
-        mdlAsiento = new MdlAsiento();
+        MdlSeleccionSillas mdlAsiento;
+        mdlAsiento = new MdlSeleccionSillas();
         // toma la cantidad de sillas seleecionadas
         int cantidadSillas = Integer.parseInt(spNumeroSillas.getValue().toString());
         // inicia modelo
@@ -97,7 +97,7 @@ public class VtnFuncion extends javax.swing.JFrame {
         btnSiguientePelicula.setIcon(icon2);
     }
 
-    public MdlFuncion getMdlFuncion() {
+    public MdlSeleccionFuncion getMdlFuncion() {
         return mdlFuncion;
     }
 

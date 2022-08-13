@@ -5,8 +5,8 @@
  */
 package vista;
 
-import modelo.MdlRegistro;
-import control.logica.CtrRegistro;
+import modelo.MdlRegistroEmpleado;
+import control.logica.CtrRegistroEmpleado;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
@@ -17,16 +17,16 @@ import javax.swing.JTextField;
  * @author Daniel Paez
  * @author Nicolas Di­az
  */
-public class VtnRegistro extends javax.swing.JFrame {
+public class VtnRegistroEmpleado extends javax.swing.JFrame {
 
-    private final MdlRegistro mdlRegistro;
-    private CtrRegistro ctrRegistro;
+    private final MdlRegistroEmpleado mdlRegistro;
+    private CtrRegistroEmpleado ctrRegistro;
 
     /**
      *
      * @param modelo
      */
-    public VtnRegistro(MdlRegistro modelo) {
+    public VtnRegistroEmpleado(MdlRegistroEmpleado modelo) {
         this.mdlRegistro = modelo;
         initComponents();
         setLocationRelativeTo(null);
@@ -37,7 +37,7 @@ public class VtnRegistro extends javax.swing.JFrame {
      * 
      * @return 
      */
-    public MdlRegistro getMdlRegistro() {
+    public MdlRegistroEmpleado getMdlRegistro() {
         return mdlRegistro;
     }
 
@@ -45,9 +45,9 @@ public class VtnRegistro extends javax.swing.JFrame {
      * 
      * @return 
      */
-    public CtrRegistro getCtrRegistro() {
+    public CtrRegistroEmpleado getCtrRegistro() {
         if (ctrRegistro == null) {
-            ctrRegistro = new CtrRegistro(this);
+            ctrRegistro = new CtrRegistroEmpleado(this);
         }
         return ctrRegistro;
     }

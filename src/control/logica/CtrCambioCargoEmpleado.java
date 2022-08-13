@@ -7,10 +7,10 @@ package control.logica;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import vista.VtnCambiarEmpleado;
-import vista.VtnCambiarEmpleado;
-import modelo.MdlCambiarCargo;
-import modelo.MdlCambiarCargo;
+import vista.VtnCambioCargoEmpleado;
+import vista.VtnCambioCargoEmpleado;
+import modelo.MdlCambioCargoEmpleado;
+import modelo.MdlCambioCargoEmpleado;
 
 /**
  *
@@ -18,11 +18,11 @@ import modelo.MdlCambiarCargo;
  * @author Daniel Paez
  * @author Nicolas Di­az
  */
-public class CtrCambiarCargo implements ActionListener {
+public class CtrCambioCargoEmpleado implements ActionListener {
 
-    private MdlCambiarCargo modelo;
+    private MdlCambioCargoEmpleado modelo;
 
-    public CtrCambiarCargo(VtnCambiarEmpleado aThis) {
+    public CtrCambioCargoEmpleado(VtnCambioCargoEmpleado aThis) {
         modelo = aThis.getModelo();
     }
 

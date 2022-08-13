@@ -7,8 +7,8 @@ package control.logica;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import modelo.MdlFuncion;
-import vista.VtnFuncion;
+import modelo.MdlSeleccionFuncion;
+import vista.VtnSeleccionFuncion;
 
 /**
  *
@@ -16,13 +16,13 @@ import vista.VtnFuncion;
  * @author Daniel Paez
  * @author Nicolas Di­az
  */
-public class CtrFuncion implements ActionListener {
+public class CtrSeleccionFuncion implements ActionListener {
 
-    private MdlFuncion mdlFuncion;
+    private MdlSeleccionFuncion mdlFuncion;
     String multiplex;
     int cont = 1;
 
-    public CtrFuncion(VtnFuncion aThis, String multiplex) {
+    public CtrSeleccionFuncion(VtnSeleccionFuncion aThis, String multiplex) {
         mdlFuncion = aThis.getMdlFuncion();
         this.multiplex = multiplex;
         // para bloquear boton de siguiente en caso de no haber mas peliculas en el multplex

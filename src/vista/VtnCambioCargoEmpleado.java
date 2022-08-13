@@ -5,8 +5,8 @@
  */
 package vista;
 
-import modelo.MdlCambiarCargo;
-import control.logica.CtrCambiarCargo;
+import modelo.MdlCambioCargoEmpleado;
+import control.logica.CtrCambioCargoEmpleado;
 import javax.swing.JButton;
 import javax.swing.JTextField;
 import modelo.MdlInicioSesion;
@@ -17,25 +17,25 @@ import modelo.MdlInicioSesion;
  * @author Daniel Paez
  * @author Nicolas Di­az
  */
-public class VtnCambiarEmpleado extends javax.swing.JFrame {
+public class VtnCambioCargoEmpleado extends javax.swing.JFrame {
     
-    private final MdlCambiarCargo modelo;
-    private CtrCambiarCargo control;
+    private final MdlCambioCargoEmpleado modelo;
+    private CtrCambioCargoEmpleado control;
 
-    public VtnCambiarEmpleado(MdlCambiarCargo modelo) {
+    public VtnCambioCargoEmpleado(MdlCambioCargoEmpleado modelo) {
         this.modelo = modelo;
         initComponents();
         setLocationRelativeTo(null);
         CapturarEventos();
     }
     
-    public MdlCambiarCargo getModelo() {
+    public MdlCambioCargoEmpleado getModelo() {
         return modelo;
     }
     
-    public CtrCambiarCargo getControl() {
+    public CtrCambioCargoEmpleado getControl() {
         if(control == null){
-            control = new CtrCambiarCargo(this);
+            control = new CtrCambioCargoEmpleado(this);
         }
         return control;
     }

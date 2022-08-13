@@ -5,8 +5,8 @@
  */
 package vista;
 
-import modelo.MdlCalificar;
-import control.logica.CtrCalificar;
+import modelo.MdlCalificarPelicula;
+import control.logica.CtrCalificarPelicula;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JSpinner;
@@ -18,12 +18,12 @@ import javax.swing.SpinnerNumberModel;
  * @author Daniel Paez
  * @author Nicolas Di­az
  */
-public class VtnCalificar extends javax.swing.JFrame {
+public class VtnCalificarPelicula extends javax.swing.JFrame {
 
-    private final MdlCalificar mdlCalificar;
-    private CtrCalificar ctrCalificar;
+    private final MdlCalificarPelicula mdlCalificar;
+    private CtrCalificarPelicula ctrCalificar;
 
-    public VtnCalificar(MdlCalificar modelo) {
+    public VtnCalificarPelicula(MdlCalificarPelicula modelo) {
         this.mdlCalificar = modelo;
         initComponents();
         setLocationRelativeTo(null);
@@ -39,9 +39,9 @@ public class VtnCalificar extends javax.swing.JFrame {
      *
      * @return
      */
-    public CtrCalificar getCtrCalificar() {
+    public CtrCalificarPelicula getCtrCalificar() {
         if (ctrCalificar == null) {
-            ctrCalificar = new CtrCalificar(this);
+            ctrCalificar = new CtrCalificarPelicula(this);
         }
         return ctrCalificar;
     }
@@ -54,7 +54,7 @@ public class VtnCalificar extends javax.swing.JFrame {
         btnCalificar.addActionListener(getCtrCalificar());
     }
 
-    public MdlCalificar getMdlCalificar() {
+    public MdlCalificarPelicula getMdlCalificar() {
         return mdlCalificar;
     }
 
@@ -123,7 +123,7 @@ public class VtnCalificar extends javax.swing.JFrame {
 
         jLabel8.setFont(new java.awt.Font("Trebuchet MS", 0, 30)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(73, 80, 87));
-        jLabel8.setText("Menu Administrador");
+        jLabel8.setText("Menu Cliente");
         jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 280, 60));
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/clasificacion (1).png"))); // NOI18N

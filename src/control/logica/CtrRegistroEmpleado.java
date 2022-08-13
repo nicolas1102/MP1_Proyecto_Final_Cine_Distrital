@@ -9,8 +9,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Locale;
 import javax.swing.JOptionPane;
-import modelo.MdlRegistro;
-import vista.VtnRegistro;
+import modelo.MdlRegistroEmpleado;
+import vista.VtnRegistroEmpleado;
 
 /**
  * 
@@ -18,15 +18,15 @@ import vista.VtnRegistro;
  * @author Daniel Paez
  * @author Nicolas Di­az
  */
-public class CtrRegistro implements ActionListener {
+public class CtrRegistroEmpleado implements ActionListener {
        
-    private MdlRegistro  modelo;
+    private MdlRegistroEmpleado  modelo;
     
     /**
      * 
      * @param aThis 
      */
-    public CtrRegistro(VtnRegistro aThis) {
+    public CtrRegistroEmpleado(VtnRegistroEmpleado aThis) {
         modelo = aThis.getMdlRegistro();
     }
   

@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import control.dao.EmpleadosDAO;
 import control.dao.MultiplexesDAO;
-import vista.VtnRegistro;
+import vista.VtnRegistroEmpleado;
 
 /**
  *
@@ -18,11 +18,11 @@ import vista.VtnRegistro;
  * @author Daniel Paez
  * @author Nicolas Di­az
  */
-public class MdlRegistro {
+public class MdlRegistroEmpleado {
 
     private int idMultiplex;
 
-    private VtnRegistro vtnRegistro;
+    private VtnRegistroEmpleado vtnRegistro;
 
     /**
      * 
@@ -36,9 +36,9 @@ public class MdlRegistro {
      * 
      * @return 
      */
-    public VtnRegistro getVentana() {
+    public VtnRegistroEmpleado getVentana() {
         if (vtnRegistro == null) {
-            vtnRegistro = new VtnRegistro(this);
+            vtnRegistro = new VtnRegistroEmpleado(this);
         }
         return vtnRegistro;
     }

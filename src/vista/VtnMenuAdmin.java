@@ -5,9 +5,9 @@
  */
 package vista;
 
-import modelo.MdlRegistro;
+import modelo.MdlRegistroEmpleado;
 import modelo.MdlInicioSesion;
-import modelo.MdlCambiarCargo;
+import modelo.MdlCambioCargoEmpleado;
 import modelo.MdlVerEmpleado;
 import javax.swing.JOptionPane;
 
@@ -20,7 +20,7 @@ import javax.swing.JOptionPane;
 public class VtnMenuAdmin extends javax.swing.JFrame {
 
     
-    private VtnRegistro vtnRegistro;
+    private VtnRegistroEmpleado vtnRegistro;
     
     public VtnMenuAdmin() {
         initComponents();
@@ -143,14 +143,14 @@ public class VtnMenuAdmin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAnadirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnadirActionPerformed
-        MdlRegistro mdlRegistro;
-        mdlRegistro = new MdlRegistro();
+        MdlRegistroEmpleado mdlRegistro;
+        mdlRegistro = new MdlRegistroEmpleado();
         mdlRegistro.Iniciar();
     }//GEN-LAST:event_btnAnadirActionPerformed
 
     private void btnCambiarCargoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCambiarCargoActionPerformed
-        MdlCambiarCargo mdlCambiarCargo;
-        mdlCambiarCargo = new MdlCambiarCargo();
+        MdlCambioCargoEmpleado mdlCambiarCargo;
+        mdlCambiarCargo = new MdlCambioCargoEmpleado();
         mdlCambiarCargo.Iniciar();
     }//GEN-LAST:event_btnCambiarCargoActionPerformed
 

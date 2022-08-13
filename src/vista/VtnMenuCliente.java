@@ -6,9 +6,9 @@
 package vista;
 
 import modelo.MdlMenuCliente;
-import modelo.MdlFuncion;
-import modelo.MdlSnacks;
-import modelo.MdlCalificar;
+import modelo.MdlSeleccionFuncion;
+import modelo.MdlSeleccionSnacks;
+import modelo.MdlCalificarPelicula;
 import control.logica.CtrMenuCliente;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -50,8 +50,8 @@ public class VtnMenuCliente extends javax.swing.JFrame {
      * metodo para la muestra de la ventana de seleeion de funcion
      */
     public void mostrarVtnFuncion() {
-        MdlFuncion mdlFuncion;
-        mdlFuncion = new MdlFuncion();
+        MdlSeleccionFuncion mdlFuncion;
+        mdlFuncion = new MdlSeleccionFuncion();
         // se toma el multiplex escogido para mostrar una ventana con los datos para dicho multiplex
         String multiplex = (String) cbMultiplexes.getSelectedItem();
         mdlFuncion.iniciar(multiplex);
@@ -61,8 +61,8 @@ public class VtnMenuCliente extends javax.swing.JFrame {
      * metodo para la muestra de la ventana de compra de configurarInfoSnacks
      */
     public void mostrarVtnSnacks() {
-        MdlSnacks mdlSnacks;
-        mdlSnacks = new MdlSnacks();
+        MdlSeleccionSnacks mdlSnacks;
+        mdlSnacks = new MdlSeleccionSnacks();
         String multiplex = (String) cbMultiplexes.getSelectedItem();
         mdlSnacks.iniciar(multiplex);
     }
@@ -71,8 +71,8 @@ public class VtnMenuCliente extends javax.swing.JFrame {
      * metodo para la muestra de la ventana de calificacion de pelicula
      */
     public void mostrarVtnCalificacion() {
-        MdlCalificar mdlCalificar;
-        mdlCalificar = new MdlCalificar();
+        MdlCalificarPelicula mdlCalificar;
+        mdlCalificar = new MdlCalificarPelicula();
         mdlCalificar.iniciar();
     }
 

@@ -9,8 +9,8 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
-import modelo.MdlAsiento;
-import vista.VtnSeleccionAsientos;
+import modelo.MdlSeleccionSillas;
+import vista.VtnSeleccionSillas;
 
 /**
  *
@@ -18,15 +18,15 @@ import vista.VtnSeleccionAsientos;
  * @author Daniel Paez
  * @author Nicolas Di­az
  */
-public class CtrAsientos implements ActionListener {
+public class CtrSeleccionSillas implements ActionListener {
 
-    private MdlAsiento mdlAsiento;
+    private MdlSeleccionSillas mdlAsiento;
 
     /**
      *
      * @param aThis
      */
-    public CtrAsientos(VtnSeleccionAsientos aThis) {
+    public CtrSeleccionSillas(VtnSeleccionSillas aThis) {
         mdlAsiento = aThis.getMdlAsiento();
     }
 

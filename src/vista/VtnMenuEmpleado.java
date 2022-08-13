@@ -5,8 +5,8 @@
  */
 package vista;
 
-import modelo.MdlFuncion;
-import modelo.MdlSnacks;
+import modelo.MdlSeleccionFuncion;
+import modelo.MdlSeleccionSnacks;
 import modelo.MdlInicioSesion;
 import modelo.MdlRegistroUsuarios;
 import modelo.MdlMenuEmpleado;
@@ -62,8 +62,8 @@ public class VtnMenuEmpleado extends javax.swing.JFrame {
      * @param multi 
      */
     public void MostrarSeleccion(String multi) {
-        MdlFuncion m;
-        m = new MdlFuncion();
+        MdlSeleccionFuncion m;
+        m = new MdlSeleccionFuncion();
         m.iniciar(multi);
     }
 
@@ -73,8 +73,8 @@ public class VtnMenuEmpleado extends javax.swing.JFrame {
      * @param multi 
      */
     public void mostrarSnacks(String multi) {
-        MdlSnacks s;
-        s = new MdlSnacks();
+        MdlSeleccionSnacks s;
+        s = new MdlSeleccionSnacks();
         s.iniciar(multi);
     }
 

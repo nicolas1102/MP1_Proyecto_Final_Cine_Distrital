@@ -21,12 +21,12 @@ import modelo.MdlInicioSesion;
 public class CtrInicioSesion implements ActionListener {
 
     private MdlInicioSesion mdlInicioSesion;
-    private int usuario;
 
     public CtrInicioSesion(VtnInicioSesion aThis) {
         mdlInicioSesion = aThis.getMdlInicioSesion();
     }
 
+    private int usuario;
     /**
      * funcion que maneja los eventos generados en vista inicio sesion
      * @param e 

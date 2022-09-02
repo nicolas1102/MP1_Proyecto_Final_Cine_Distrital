@@ -92,7 +92,7 @@ In this window the administrator will have the option to change the position of 
 As a conclusion we can see a highly integrated view system where different types of roles are managed at the user level, facilitating the use of the system both for clients and for District Cinema employees, this management of separate views improves the modularity of the system, complying with one of the fundamental principles of object-oriented programming, which is to have an optimal solution that complies with high cohesion and low coupling in deve
 
 
-Developers:
+### Developers:
  - Miguel Londono
  - Nicolas Diaz
  - Daniel Paez

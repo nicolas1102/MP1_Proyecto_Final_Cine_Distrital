@@ -8,3 +8,5 @@ Developers:
  - Miguel Londono
  - Nicolas Diaz
  - Daniel Paez
+
+[![download](https://img.shields.io/github/downloads/nicolas1102/MP1_Proyecto_Final_Cine_Distrital/total.svg)](https://github.com/nicolas1102/MP1_Proyecto_Final_Cine_Distrital/releases)

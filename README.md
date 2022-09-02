@@ -1,4 +1,4 @@
-# MP1_Proyecto_Final_Cine_Distrital
+# Cine Distrital
 
 This program is a cinema ticket management system for clients, employees and administrators.
 

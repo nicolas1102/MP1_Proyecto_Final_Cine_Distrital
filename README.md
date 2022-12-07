@@ -95,7 +95,6 @@ As a conclusion we can see a highly integrated view system where different types
 ### Developers:
  - Miguel Londono
  - Nicolas Diaz
- - Daniel Paez
 
 
 
